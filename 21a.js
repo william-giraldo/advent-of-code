@@ -74,7 +74,6 @@ let CACHE = Array(NUM_KEYPADS - 2);
 
 function calcTransition(dst, org, l) {
     const key = `${org}-${dst}`;
-
     if (dst === org) return 1;
     if (l == NUM_KEYPADS - 1){
         return PRECOMPUTED[key][0].length;
